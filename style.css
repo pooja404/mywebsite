@@ -1,0 +1,113 @@
+.spacenav{
+    padding: 0 50 0 50;
+    
+  
+}
+
+header  div ul li a{
+    color: white;
+}
+header  div ul li a:hover{
+    text-decoration: underline;
+}
+
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;;
+
+}
+.banner{
+    background-image: url('images/xyz.PNG');
+    height: 554px;
+    width: -webkit-fill-available;
+    background-repeat: no-repeat;
+}
+
+.bottombanner{
+    background-color: #007D7D;
+    color: white;
+    position: relative;
+    margin-top: -151px;
+    height: -118px;
+    opacity: 0.9;
+    padding:30px;
+
+}
+
+.rightborder{
+    border-right: 2px solid #fff;
+}
+.gartnerdesc{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif, Times, serif;
+}
+
+.h2features{
+color: #00758b;
+font-size: 100px;
+margin: 0;
+font-weight: normal;
+text-transform: uppercase;
+font-family: 'Oswald', sans-serif;}
+
+
+.h3feature
+{
+    color: #00adad;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.paradetails{
+    color: #333;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    font-family: 'Lato', sans-serif, Times, serif;
+}
+
+.ulfeature{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.ulfeature li{
+    margin: 0;
+    width: 45%;
+    padding: 0px;
+    margin-bottom: 80px;
+    position: relative;
+    transition: 0.5s;
+    -o-transition: 0.5s;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    margin-right: auto;
+}
+
+.ulfeature li figure{
+height: 34px;
+    margin: 0 0 18px;
+    overflow: hidden;
+}
+
+.ulfeature li figure img{
+height: 34px;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: bottom;}
+
+
+.grey-block{
+    position: relative;
+    padding-bottom :25px ;
+}
+.imgfeature{
+    left: 0;
+    top: -54px;
+    max-width: 94%;
+    position: absolute;
+}
