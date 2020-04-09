@@ -8,14 +8,68 @@
     <link
         href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i"
         rel="stylesheet">
+        <script src= https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="slider.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+      
+        <!-- Back to top button -->
+       <style>
+           #button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+       </style>
+
+       
+
+    
 </head>
 
 <body>
+    <a id="button"></a>
+
+   
+    
+    
     <header>
         <div class="navbar navbar-fixed-top spacenav " role="navigation">
             <div class="navbar-header">
@@ -37,7 +91,7 @@
 
     </header>
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding: 0;">
          
             <div class="banner"></div>
             <div class="col-md-12 bottombanner">
@@ -51,7 +105,7 @@
             
         </div>
     </section>
-    <section>
+    <section style="margin-bottom: 100px;">
        <div class="container">
            <div class="row">
                <div class="col-md-4">
@@ -70,7 +124,7 @@
             </div>
        </div>
     </section>
-    <section>
+    <section style="margin-bottom: 100px;">
         <div class="container" style="margin: 0px;">
             <div class="row">
                 <div class="col-md-6"></div>
@@ -117,9 +171,291 @@
             </div>
         </div>
     </section>
+  <section>
+    <div class="container">
+        <h3 class="h3feature">Delivering impact for our clients</h3>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="carousel slide multi-item-carousel" id="theCarousel">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-xs-4">
+                      <a href="http://52.66.239.33/enquero-mentioned-in-gartner-augmented-data-catalogs-report/" target="_blank">
+                        <img src="http://52.66.239.33/wp-content/uploads/2020/01/Enquero-mentioned-in-Gartner-Augmented-Data-Catalogs-Report-Updated-1.jpg"  class="img-responsive"></a>
+                        <div class="text-block">
+                            <h4>
+                              Enquero mentioned in Gartner Augmented Data Catalogs Report                                    </h4>
+                          </a> 
+                            <span>Blog</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4">
+                    <a href="http://52.66.239.33/chocolate-makes-the-clothes-shrink/" target="_blank">
+                        <img src="http://52.66.239.33/wp-content/uploads/2020/01/Chocolate-makes-the-clothes-shrink-1.jpg"  class="img-responsive"></a>
+                        <div class="text-block">
+                            <h4>
+                              Chocolate makes the clothes shrink                                    </h4>
+                          </a> 
+                            <span>Blog</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4"><a href="https://www.youtube.com/watch?v=i67mF7QGBTk&feature=youtu.be" target="_blank">
+                    <img src="http://52.66.239.33/wp-content/uploads/2020/03/optimizing-sales-capacity-and-quota-planning.jpg"  class="img-responsive"></a>
+                    <div class="text-block">
+                        <h4>
+                          Optimizing Sales Capacity and Quota Planning                                    </h4>
+                      </a> 
+                        <span>Webinar</span>
+                    </div></div>
+                </div>
+                <div class="item">
+                    <div class="col-xs-4"><a href="https://www.youtube.com/watch?v=i67mF7QGBTk&feature=youtu.be" target="_blank">
+                        <img src="http://52.66.239.33/wp-content/uploads/2020/01/Gaining-the-competitive-edge-with-digital-transformation.jpg"  class="img-responsive"></a>
+                        <div class="text-block">
+                            <h4>
+                              Gaining the competitive edge with digital transformation                                    </h4>
+                          </a> 
+                            <span>Case Study</span>
+                        </div></div>
+                </div>
+                <div class="item">
+                    <div class="col-xs-4"><a href="https://www.youtube.com/watch?v=i67mF7QGBTk&feature=youtu.be" target="_blank">
+                        <img src="http://52.66.239.33/wp-content/uploads/2020/01/Scaling-customer-experience-through-machine-learning.jpg"  class="img-responsive"></a>
+                        <div class="text-block">
+                            <h4>
+                              Scaling customer experience through machine learning                                    </h4>
+                          </a> 
+                            <span>Case Study</span>
+                        </div></div>
+                </div>
+                
+                <!-- add  more items here -->
+                <!-- Example item start:  -->
+                
+                
+                
+                <!--  Example item end -->
+              </div>
+              <a class=" left carousel-control leftarrow" href="#theCarousel" data-slide="prev" style="
+              padding-left: 60px;
+              padding-top: 39px;
+              margin-left: -159px;
+              background: #E6E5EA;
+              border-radius: 50% !important;
+              width: 99px;
+              height: 121px;
+              right: -80px;
+              padding-right: 25px;
+              top: 10%;
+              transition: 0.5s;
+              -o-transition: 0.5s;
+              -webkit-transition: 0.5s;"
+          ><i class="glyphicon glyphicon-arrow-left"></i></a>
+              <a class=" right carousel-control" href="#theCarousel" data-slide="next" style="padding-top: 35px;
+              top: 18%;
+              width: 99px;
+              margin-right: -140px;
+              bottom: 53%;
+              border-radius: 50% !important;"><i class="glyphicon glyphicon-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
+   
 
+ <section>
+     <div class="container">
+         <h3 class="h3feature">Connecting data to decisions </h3>
+        <div class="prd_powerme">
+            <div class="prd_1" style="width: 42%;margin-right: 50px;">
+                <a href="http://52.66.239.33/power-me/"></a>
+                <div class="product-box-first">
+                    <div class="img-block"><img src="http://52.66.239.33/wp-content/themes/enquero/images/new-home/power-me-icon.png" class="img-center" alt="">
+                    <div class="img-hover"><img src="http://52.66.239.33/wp-content/themes/enquero/images/EXPLORE-OUR-PLATFORM_21Jan_Alpha.gif"></div></div>
+                    <div class="product-box-text">
+                        <h2>PowerMe</h2>
+                        <p>PowerMe is ML based data discovery, data lineage and data quality platform with plug-and play integration with Enterprise Data and BI landscape. The insights-driven platform helps  in accelerating initiatives with smarter Business Intelligence.</p>
+                        <div class="learn_more clearfix">
+                            <a href="power-me" class="product-box-text-link pull-left">Learn More</a>
+                            <div class="arrow1 pull-right">
+                                <a href="power-me"><img src="http://52.66.239.33/wp-content/themes/enquero/images/arrow-blue.png" align="right"></a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="prd_2" style="width: 42%;">
+                
+                    <a href="http://52.66.239.33/leap/">
+                <div class="product-box-first">
+                    <div class="img-block"><img src="http://52.66.239.33/wp-content/themes/enquero/images/new-home/nhome-leap.png" class="img-center" alt="">
+                    <div class="img-hover"><img src="http://52.66.239.33/wp-content/themes/enquero/images/Homepage_icon_Alpha.gif"></div></div>
+                    <!-- Homepage_icon_Alpha -->
+                    <div class="product-box-text">
+                        <h2>LEAP</h2>
+                        <p>LEAP is a key cornerstone of finance business transformation designed to simplify and automate entity formation, closure and divestiture, helping in operational and governance excellence, and maximizing business value for enterprises.</p>
+                        <div class="learn_more clearfix">
+                            <a href="leap" class="product-box-text-link pull-left">Learn More</a>
+                            <div class="arrow1 pull-right">
+                                <a href="leap"><img src="http://52.66.239.33/wp-content/themes/enquero/images/arrow-blue.png" align="right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+               
+            </div>
+        </div>
+     </div>
+ </section>
+ <section class="gridgallery ggdiv ">
+    <div class="container">
+       <div class="row">
+           <div class="col-md-12">
+               <div class="gallery nopadding">
+                   <figure class="gallery_item gallery_item_1">
+                    <a href="http://52.66.239.33/career/">
+                       <img src="http://52.66.239.33/wp-content/themes/enquero/images/gallery/1.jpg" class="gallery_img " alt="Image 1">
+                       <div class="boxes">
+                            <img src="http://52.66.239.33/wp-content/themes/enquero/images/arrow-right.svg">
+                       </div>
+                       <div class="boxes-text">Careers</div>
+                       </a>
+                   </figure>
+                   <figure class="gallery_item gallery_item_2">
+                    <a href="http://52.66.239.33/news-and-events">
+                       <img src="http://52.66.239.33/wp-content/themes/enquero/images/gallery/2.jpg" class="gallery_img" alt="Image 2">
+                       <div class="boxes">
+                             <img src="http://52.66.239.33/wp-content/themes/enquero/images/arrow-right.svg"> 
+                      </div>
+                      <div class="boxes-text">Events</div>
+                      </a>
+                   </figure>
+                   <figure class="gallery_item gallery_item_3">
+                    <a href="http://52.66.239.33/resources/">
+                       <img src="http://52.66.239.33/wp-content/themes/enquero/images/gallery/3.jpg" class="gallery_img" alt="Image 3">
+                       <div class="boxes">
+                              <img src="http://52.66.239.33/wp-content/themes/enquero/images/arrow-right.svg"> 
+                      </div>
+                      <div class="boxes-text">Insights</div>
+                      </a> 
+                   </figure>
+                   <figure class="gallery_item gallery_item_4">
+                    <a href="http://52.66.239.33/about/#presence-locations">
+                       <img src="http://52.66.239.33/wp-content/themes/enquero/images/gallery/4.jpg" class="gallery_img" alt="Image 4">
+                       <div class="boxes">
+                            <img src="http://52.66.239.33/wp-content/themes/enquero/images/arrow-right.svg">
+                      </div>
+                      <div class="boxes-text">Locations</div>
+                      </a>
+                   </figure>
+                   <figure class="gallery_item gallery_item_5">
+                       <a href="http://52.66.239.33/career#testomonails">
+                        <img src="http://52.66.239.33/wp-content/themes/enquero/images/gallery/5.jpg" class="gallery_img" alt="Image 5">
+                       <div class="boxes ">
+                        <img src="http://52.66.239.33/wp-content/themes/enquero/images/arrow-right.svg">
+                      </div>
+                      <div class="boxes-text">People Stories</div>
+                      </a>
+                   </figure>
+               </div>
+           </div>
+       </div>
+    </div>
+    
+    </section>
+    <footer style="background-color:#04adad;" >
+        <div class="container">
+            
+                
+                    <div class="row">
+                     <div class="col-md-12 nopadding">
+                        <ul class="footer_links_new">
+                            <li><a href="#">ABOUT US</a> </li>
+                            <li class="borders"><a href="#">CAREERS</a> </li>
+                            <li><a href="#" class="gotocontact" id="contactTab">CONTACT US</a> </li>
+                          </ul>
+                     </div>
+                     <div class="col-md-12  social-box">
+                        <ul class="list-unstyled list-inline social text-center social_icons">
+                          <li class="list-inline-item">
+                            <a target="_blank" href="https://www.linkedin.com/company/enquero/">
+                               <img src="http://52.66.239.33/wp-content/themes/enquero/images/footer-icon/linkedin-svg-icon.svg" alt="instagram-social">
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a target="_blank" href="https://twitter.com/enqueroinc">
+                              <img src="http://52.66.239.33/wp-content/themes/enquero/images/footer-icon/twitter-svg-icon.svg" alt="instagram-social">
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a target="_blank"  href="https://www.instagram.com/enqueroinc/">
+                              <img src="http://52.66.239.33/wp-content/themes/enquero/images/footer-icon/insta-svg-icon.svg" alt="instagram-social">
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a target="_blank" href="https://www.youtube.com/channel/UCNaoLuY-e5Cyc5lkbq9C51Q">
+                              <img src="http://52.66.239.33/wp-content/themes/enquero/images/footer-icon/youtube-svg-icon.svg" alt="youtube-social">
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com/enqueroinc/">
+                                <img src="http://52.66.239.33/wp-content/themes/enquero/images/footer-icon/fb-svg-icon.svg" alt="facebook-social">
+                              </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div> 
+                 
+             </div>
+        </div>
+        <div class="container-fluid ">
+            <div class="row footer-bottom">
+              <div class="col-md-6 left-span text-center"><span>&copy; 2020 ENQUERO INC, ALL RIGHTS RESERVED.</span></div>
+              <div class="col-md-6 right-span text-center "> <span><a href="http://52.66.239.33/terms-of-use/
+      ">TERMS OF USE</a> <a href="http://52.66.239.33/privacy-policy/
+      ">PRIVACY POLICY</a></span>
+              </div>
+            </div>
+          </div>
+    </footer>
+   
+<div>
+   
+</div>
+<script>
 
+    $(document).ready( function  ()  {
+    
+    
+        var btn = $('#button');
+    
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+    
+    btn.on('click', function(e) {
+        console.log ( " Clicked "); 
+        e.preventDefault();
+
+        $('html,body').animate({scrollTop:0}, '300');
+    });
+    
+    
+    
+    })
+    
+</script> 
 </body>
 
 </html>
